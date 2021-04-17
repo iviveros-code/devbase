@@ -5,6 +5,8 @@ import {NavigationContainer} from '@react-navigation/native';
 import Home from '../screens/Home';
 import Profile from '../screens/Profile';
 
+import {theme} from '../theme';
+
 const Stack = createStackNavigator();
 
 export default function Navigation() {
@@ -14,7 +16,7 @@ export default function Navigation() {
         headerBackTitleVisible={false}
         screenOptions={{
           headerStyle: {
-            backgroundColor: '#7159c1',
+            backgroundColor: theme.colors.black,
           },
           headerTintColor: '#FFF',
         }}>
@@ -22,7 +24,7 @@ export default function Navigation() {
           name="Home"
           component={Home}
           options={{
-            title: 'GitHub Users',
+            title: 'Home',
             headerTitleAlign: 'center',
           }}
         />
