@@ -3,10 +3,10 @@ import {View, Text} from 'react-native';
 
 import {styles} from './styles';
 
-export default function Profile({route, navigation}) {
+export default function Details({route, navigation}) {
   return (
     <View>
-      <Text>Profile Screen</Text>
+      <Text>Details Screen</Text>
     </View>
   );
 }

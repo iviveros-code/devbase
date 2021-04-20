@@ -3,7 +3,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
 
 import Home from '../screens/Home';
-import Profile from '../screens/Profile';
+import Details from '../screens/Details';
 
 import {theme} from '../theme';
 
@@ -29,9 +29,9 @@ export default function Navigation() {
           }}
         />
         <Stack.Screen
-          name="Profile"
-          component={Profile}
-          options={({route}) => ({title: route.params.user.name})}
+          name="Details"
+          component={Details}
+          // options={({route}) => ({title: route.params.name})}
         />
       </Stack.Navigator>
     </NavigationContainer>

@@ -6,7 +6,7 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     marginHorizontal: theme.spacings.XXL,
     flex: 1,
-    justifyContent: 'center',
+    paddingVertical: 50,
   },
   chipContainer: {
     flexDirection: 'row',
@@ -21,5 +21,19 @@ export const styles = StyleSheet.create({
   subTitle: {
     alignSelf: 'flex-start',
     marginBottom: 40,
+  },
+  btnContainer: {
+    flex: 1,
+    justifyContent: 'flex-end',
+  },
+  btn: {
+    width: 200,
+    height: 40,
+    backgroundColor: theme.colors.green,
+    borderWidth: 0.5,
+    borderColor: theme.colors.grey,
+    borderRadius: theme.spacings.XXS,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });

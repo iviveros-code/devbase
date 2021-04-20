@@ -8,6 +8,8 @@ export const theme = {
     blue: '#0984e3',
     blue_dark: '#0652DD',
     white: '#f5f6fa',
+    green: '#8fd9a8',
+    grey: '#d8e3e7',
   },
   spacings: {
     XXS: 3,
