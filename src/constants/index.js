@@ -1,0 +1,6 @@
+export const NAVIGATION = {
+  SCREEN: {
+    HOME: 'NAVIGATION.SCREEN.HOME',
+    DETAILS: 'NAVIGATION.SCREEN.DETAILS',
+  },
+};

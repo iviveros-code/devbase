@@ -10,6 +10,7 @@ export const theme = {
     white: '#f5f6fa',
     green: '#8fd9a8',
     grey: '#d8e3e7',
+    grey_dark: '#6e7c7c',
   },
   spacings: {
     XXS: 3,
@@ -18,5 +19,6 @@ export const theme = {
     L: 12,
     XL: 16,
     XXL: 20,
+    XXXL: 30,
   },
 };

@@ -9,6 +9,7 @@ export const styles = StyleSheet.create({
     flex: 1,
   },
   chipContainer: {
+    marginHorizontal: 40,
     flexDirection: 'row',
     flexWrap: 'wrap',
     marginBottom: 60,
@@ -26,7 +27,7 @@ export const styles = StyleSheet.create({
   containerChip: select => ({
     backgroundColor: select ? theme.colors.blue_dark : theme.colors.blue,
     height: 30,
-    width: 90,
+    width: 120,
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: theme.spacings.XXS,

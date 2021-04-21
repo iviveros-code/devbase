@@ -6,6 +6,7 @@ import Home from '../screens/Home';
 import Details from '../screens/Details';
 
 import {theme} from '../theme';
+import {NAVIGATION} from '../constants';
 
 const Stack = createStackNavigator();
 
@@ -21,7 +22,7 @@ export default function Navigation() {
           headerTintColor: '#FFF',
         }}>
         <Stack.Screen
-          name="Home"
+          name={NAVIGATION.SCREEN.HOME}
           component={Home}
           options={{
             title: 'Home',
@@ -29,9 +30,12 @@ export default function Navigation() {
           }}
         />
         <Stack.Screen
-          name="Details"
+          name={NAVIGATION.SCREEN.DETAILS}
           component={Details}
-          // options={({route}) => ({title: route.params.name})}
+          options={{
+            title: 'Details of user',
+            headerTitleAlign: 'center',
+          }}
         />
       </Stack.Navigator>
     </NavigationContainer>
