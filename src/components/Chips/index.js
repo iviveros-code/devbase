@@ -1,22 +1,20 @@
 import React, {useState} from 'react';
 
-import {View, Text, Pressable} from 'react-native';
+import {View, Text, TouchableWithoutFeedback} from 'react-native';
 
 import {styles} from './styles';
 
-export const Chips = ({number = '', type = ''}) => {
+export const Chips = ({title = ''}) => {
   const [select, setSelect] = useState(false);
 
   const _onPress = () => setSelect(!select);
   return (
     <>
-      <Pressable onPress={_onPress}>
+      <TouchableWithoutFeedback onPress={_onPress}>
         <View style={styles.container(select)}>
-          <Text style={styles.chipTitle}>
-            {type} # {number}
-          </Text>
+          <Text style={styles.chipTitle}>{title}</Text>
         </View>
-      </Pressable>
+      </TouchableWithoutFeedback>
     </>
   );
 };
